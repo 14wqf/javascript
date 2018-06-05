@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content=" ">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin:0;padding:0}
+        li{list-style:none;}
+        body{background:#f6f9fc;font-family:Arial, Helvetica, sans-serif}
+
+        .calendar{width:210px;margin:50px auto;padding:10px 10px 20px 20px;background:#eae9e9;}
+        .calendar ul{width:210px;overflow:hidden;padding-bottom:10px;}
+        .calendar li{
+            float:left;
+            width:58px;
+            height:54px;
+            margin:10px 10px 0 0;
+            border:1px solid #fff;
+            background:#424242;
+            color:#fff;
+            text-align:center;cursor:pointer;
+        }
+        .calendar li h2{font-size:20px;padding-top:5px;}
+        .calendar li p{font-size:14px;}
+
+        .calendar li.active{border:1px solid #424242;background:#fff;color:#e84a87;}
+        .calendar li.active p{font-weight: bold;}
+
+        .calendar .text{width:178px;border:1px solid #fff;padding:10px 10px 10px;background: #f1f1f1;color:#555;}
+        .calendar .text h2{font-size: 14px;margin-bottom: 10px;}
+        .calendar .text p{font-size: 14px;line-height: 18px;}
+    </style>
+    <script>
+window.onload=function(){
+    var oDiv=document.getElementById('tab');
+    var aLi=oDiv.getElementsByTagName('li');
+    var oTxt=oDiv.getElementsByTagName('div')[0];
+
+    var arr=[
+        '正月的门神—过了时',
+        ' 二月的杨柳—分外亲',
+        '三月的桃花—红一时',
+        '四月的梅子—多少带点亲（青）',
+        '五月初六的粽子—过时货',
+        '六月的蜡油—熬不住',
+        '七月的荷花—时鲜',
+        '八月的瓜棚—空架子',
+        '九月的甘蔗—甜到心',
+        '十月的桑叶—没人采（睬）',
+        '十一月的洋葱—根枯叶烂心不死',
+        '腊月的井水—热乎乎'
+    ];
+
+    for(var i=0; i<aLi.length;i++){
+        aLi[i].index=i;
+        aLi[i].onmouseover=function (){
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].className='';
+            }
+            this.className='active';
+
+            oTxt.innerHTML='<h2>'+(this.index+1)+'月活动</h2><p>'+arr[this.index]+'</p>';
+        }
+    }
+
+}
+    </script>
+</head>
+<body>
+<div id="tab" class="calendar">
+    <ul>
+        <li class="active"><h2>1</h2><p>JAN</p></li>
+        <li><h2>2</h2><p>FER</p></li>
+        <li><h2>3</h2><p>MAR</p></li>
+        <li><h2>4</h2><p>APR</p></li>
+        <li><h2>5</h2><p>MAY</p></li>
+        <li><h2>6</h2><p>Jun</p></li>
+        <li><h2>7</h2><p>JUL</p></li>
+        <li><h2>8</h2><p>AUG</p></li>
+        <li><h2>9</h2><p>SEP</p></li>
+        <li><h2>10</h2><p>OCT</p></li>
+        <li><h2>11</h2><p>NOV</p></li>
+        <li><h2>12</h2><p>DEC</p></li>
+    </ul>
+    <div class="text">
+        <h2>1月活动</h2>
+        <p>快过年了，大家可以商量着去哪儿玩吧</p>
+    </div>
+</div>
+</body>
+</html>

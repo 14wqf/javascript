@@ -1,0 +1,31 @@
+if 如果/判断的意思
+
+语法: 
+if(条件){
+  语句1
+}else{
+  语句2
+}
+
+举例:
+
+if（天气预报有雨）{
+	带伞
+}else{
+	不带伞
+}
+
+程序思路：
+当点击的时候
+如果div是显示的，隐藏掉
+否则显示出来
+
+
+如果div是显示的，oDiv.style.display='none';
+否则oDiv.style.display='block';
+
+if(div是显示的) {
+	oDiv.style.display='none'
+}else{
+	oDiv.style.display='block'
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors ide
+ * @email   794958215@qq.com
+ * @date    2018-05-29 10:15:35
+ * @version $Id$
+ */
+body {background-color: #CCC;}
+input { width: 100px; height: 50px; background-color: red;}
