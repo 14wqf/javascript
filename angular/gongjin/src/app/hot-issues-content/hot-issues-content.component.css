@@ -1,0 +1,39 @@
+
+a{font-family:微软雅黑 ;text-decoration: none;color:#000; font-size: 13px;}
+p{font-size: 30px;}
+.width {
+  width: 15%;
+}
+ul {list-style: none;
+  padding: 0px !important;
+  font-size: 12px;
+}
+
+ul li {
+  padding-top: 10px;
+}
+
+.rig{
+  text-align: right;
+  display: block;
+}
+
+ul li .span {
+  padding-left: 5%;
+}
+
+ul li .a {
+  padding-left: 2%;
+}
+
+.top{
+  padding-top: 5%;
+}
+.sp {
+  font-size: 50%;
+}
+
+.fy{
+  padding:50px;
+}
+

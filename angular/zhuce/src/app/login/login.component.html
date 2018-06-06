@@ -1,0 +1,21 @@
+<div class="container-fluid text-center rbox">
+  <div class="registertop">
+    登陆
+  </div>
+  <div>
+  <ul>
+    <li><a class="a" [routerLink]="['./lopwd']" [routerLinkActive]="['a1']" id="a1">密码登陆</a></li>
+    <li><a class="a" [routerLink]="['./lophone']"  [routerLinkActive]="['a1']" id="a2">手机号登陆</a></li>
+  </ul>
+  </div>
+  <form action="">
+
+    <router-outlet></router-outlet>
+
+    <div class="btn" >
+      <button type="submit" class="btn-lg btn-primary btn-block login">登录</button>
+
+    </div>
+    <div class="pa">还没有账号？<a [routerLink]="['/register']">去注册</a></div>
+  </form>
+</div>

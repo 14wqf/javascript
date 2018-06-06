@@ -1,0 +1,295 @@
+<div class="big screen text-center">
+  <a href="" class="bigtitle"><h3>筛查指引</h3></a>
+  <p style="padding: 10px 0;">Screen</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 row">
+      <div class="col-sm-8">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn " id="dropdownBasic1" ngbDropdownToggle>热度高</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button class="dropdown-item">one</button>
+                  <button class="dropdown-item">two</button>
+                  <button class="dropdown-item">three</button>
+                </div>
+              </div>
+              <button class="btn btn-outline-primary width">发布问题</button>
+          </div>
+        </div>
+
+        <div class="container top">
+            <div class="col-md-12" *ngFor="let issues of issuess">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>
+                      Q：{{issues.hotissues}}
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="">
+                    <ul class="rig">
+                      <li>
+                        <span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>
+                        <span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>
+                        <span class="fa fa-calendar span"></span><a class="a" href="">{{issues.date}}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr style="border:none;border-top:1px dashed #000;" />
+          </div>
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：我不知道挂哪个科？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：邮寄病例？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：在哪建卡？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：预约的号取不出来？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：儿童药房和成人药房在一起吗？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：没带医保卡可以看病吗？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：六、日可以抽血吗？/周末可以抽血吗？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：核磁报告几天可以取？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+
+          <!--<div class="col-md-12">-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<ul>-->
+                  <!--<li>-->
+                    <!--Q：窗口能不能挂到明天的号？-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="">-->
+                  <!--<ul class="rig">-->
+                    <!--<li>-->
+                      <!--<span class="fa fa-user-o span"></span><a class="a" href="#">admin</a>-->
+                      <!--<span class="fa fa-arrow-circle-o-right span"></span><a class="a" href="">查看回复</a>-->
+                      <!--<span class="fa fa-calendar span"></span><a class="a" href="">2018.0420</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="border:none;border-top:1px dashed #000;" />-->
+          <!--</div>-->
+          <!--justify-content-center-->
+        </div>
+      </div>
+        <div>
+          <nav class="fy" aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <app-hot-issues-content-right></app-hot-issues-content-right>
+      </div>
+    </div>
+  </div>
+</div>
+

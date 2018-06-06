@@ -1,0 +1,33 @@
+a{font-family:微软雅黑 ;text-decoration: none;color:#000; font-size: 15px;}
+p{font-size: 25px;}
+ul {list-style: none;}
+ul .li {
+  float: left;
+}
+ul .top-li {
+  padding-top: 5%;
+}
+
+.sp {
+  font-size: 30px;
+  color: #D2691E;
+  padding-left:8%;
+}
+
+.btn {line-height: 0.5 !important;}
+
+.yis {padding-top: 2%}
+
+.ax {
+  font-size: 20px;
+  color: red;
+}
+
+.mc{color: #1E90FF;}
+.rq {color: #838B8B}
+
+.jz {text-align: center;}
+
+.fy{
+  padding:50px;
+}
