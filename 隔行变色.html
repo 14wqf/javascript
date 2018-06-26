@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content=" ">
+    <title>Document</title>
+    <style type="text/css">
+        a{text-decoration: none;}
+        ul,li{list-style: none;}
+        body{font-size: 14px; font-family: "微软雅黑";}
+    </style>
+    <script type="text/javascript">
+    window.onload=function (){
+        var aLi=document.getElementsByTagName('li');
+
+        for(var i=0; i<aLi.length; i++){
+            if(i%2==0){
+                aLi[i].style.background='#CCC';
+            }else{
+                aLi[i].style.background='';
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+</ul>
+</body>
+</html>

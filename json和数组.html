@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content=" ">
+    <title>Document</title>
+    <style type="text/css">
+        a{text-decoration: none;}
+        ul,li{list-style: none;}
+        body{font-size: 14px;font-family: "微软雅黑";}
+    </style>
+    <script type="text/javascript">
+        var json ={a: 12, b: 5, c: 7};
+        var arr =[12, 5 , 7];
+        // alert(json.a);                       //json
+        // alert(json['a']);                    //json
+        // alert(arr[0]);                       //数组
+
+        // for(var i=0; i<arr.length; i++){
+        //     alert('第'+i+'个东西：'+arr[i]);  //第一种for循环的写法
+        // }
+
+        for (var i in arr){
+            alert('第'+i+'个东西：'+arr[i]);     //第二种for循环的写法
+        }
+
+        for (var i in json){
+            alert('第'+i+'个东西：'+json[i]);     //第二种for循环的写法同时也适用于json
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

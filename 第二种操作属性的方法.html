@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content=" ">
+    <title>Document</title>
+    <style type="text/css">
+        a{text-decoration: none;}
+        ul,li{list-style: none;}
+        body{font-size: 14px;font-family: "微软雅黑";}
+    </style>
+    <script type="text/javascript">
+    function setText(name){
+        var oTxt=document.getElementById('txt1');
+        // var a='value'
+        //第一种操作属性的方法
+        // oTxt.value='kdjfg';
+        // 第二种操作属性的方法
+        oTxt[name]='dsfjkh'
+    }
+    </script>
+</head>
+<body>
+    <input id="txt1" type="text" />
+    <input type="button" value="改变文字" onclick="setText('title')">
+</body>
+</html>

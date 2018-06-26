@@ -1,0 +1,13 @@
+ECMAScript:   翻译   是javascript的核心   解释器
+
+DOM:          Document Object Model       HTML    Document
+
+BOM           Browser Object Model        浏览器  window
+
+
+ECMA      几乎没有兼容性问题
+DOM       有一些操作不兼容
+BOM       没有兼容性问题（完全不兼容）
+
+
+变量的类型：
